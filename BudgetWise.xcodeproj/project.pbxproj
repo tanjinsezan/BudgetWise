@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		B0BD6CC92A80E4C500CF387C /* BudgetWiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD6CC82A80E4C500CF387C /* BudgetWiseApp.swift */; };
-		B0BD6CCB2A80E4C500CF387C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD6CCA2A80E4C500CF387C /* ContentView.swift */; };
 		B0BD6CCD2A80E4C700CF387C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0BD6CCC2A80E4C700CF387C /* Assets.xcassets */; };
 		B0BD6CD02A80E4C700CF387C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0BD6CCF2A80E4C700CF387C /* Preview Assets.xcassets */; };
+		B0BD6CDA2A81843000CF387C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD6CD92A81843000CF387C /* Login.swift */; };
+		B0BD6CDC2A81848700CF387C /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD6CDB2A81848700CF387C /* Signup.swift */; };
+		B0BD6CDE2A81854100CF387C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD6CDD2A81854100CF387C /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B0BD6CC52A80E4C500CF387C /* BudgetWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BD6CC82A80E4C500CF387C /* BudgetWiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetWiseApp.swift; sourceTree = "<group>"; };
-		B0BD6CCA2A80E4C500CF387C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B0BD6CCC2A80E4C700CF387C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0BD6CCF2A80E4C700CF387C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B0BD6CD92A81843000CF387C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		B0BD6CDB2A81848700CF387C /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		B0BD6CDD2A81854100CF387C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,9 @@
 		B0BD6CBC2A80E4C500CF387C = {
 			isa = PBXGroup;
 			children = (
+				B0BD6CD82A8183E400CF387C /* ViewModel */,
+				B0BD6CD72A8183DA00CF387C /* View */,
+				B0BD6CD62A8183C800CF387C /* Model */,
 				B0BD6CC72A80E4C500CF387C /* BudgetWise */,
 				B0BD6CC62A80E4C500CF387C /* Products */,
 			);
@@ -52,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				B0BD6CC82A80E4C500CF387C /* BudgetWiseApp.swift */,
-				B0BD6CCA2A80E4C500CF387C /* ContentView.swift */,
 				B0BD6CCC2A80E4C700CF387C /* Assets.xcassets */,
 				B0BD6CCE2A80E4C700CF387C /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				B0BD6CCF2A80E4C700CF387C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B0BD6CD62A8183C800CF387C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B0BD6CD72A8183DA00CF387C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B0BD6CD92A81843000CF387C /* Login.swift */,
+				B0BD6CDB2A81848700CF387C /* Signup.swift */,
+				B0BD6CDD2A81854100CF387C /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B0BD6CD82A8183E400CF387C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +113,8 @@
 			dependencies = (
 			);
 			name = BudgetWise;
+			packageProductDependencies = (
+			);
 			productName = BudgetWise;
 			productReference = B0BD6CC52A80E4C500CF387C /* BudgetWise.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +143,9 @@
 				Base,
 			);
 			mainGroup = B0BD6CBC2A80E4C500CF387C;
+			packageReferences = (
+				B0BD6CDF2A8188DC00CF387C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B0BD6CC62A80E4C500CF387C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0BD6CCB2A80E4C500CF387C /* ContentView.swift in Sources */,
+				B0BD6CDA2A81843000CF387C /* Login.swift in Sources */,
+				B0BD6CDC2A81848700CF387C /* Signup.swift in Sources */,
+				B0BD6CDE2A81854100CF387C /* Home.swift in Sources */,
 				B0BD6CC92A80E4C500CF387C /* BudgetWiseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +307,7 @@
 				DEVELOPMENT_TEAM = Y9839HDKNL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Budget Wise";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,6 +320,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sezan.BudgetWise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,6 +340,7 @@
 				DEVELOPMENT_TEAM = Y9839HDKNL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Budget Wise";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -311,6 +353,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sezan.BudgetWise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,6 +384,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B0BD6CDF2A8188DC00CF387C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = B0BD6CBD2A80E4C500CF387C /* Project object */;
 }

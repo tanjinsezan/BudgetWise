@@ -11,7 +11,9 @@ import SwiftUI
 struct BudgetWiseApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Login()
+            Signup()
+            Home()
         }
     }
 }
